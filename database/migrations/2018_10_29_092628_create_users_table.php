@@ -15,9 +15,8 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id')->unique();
+            $table->enum('delete', ['deleted' ,'shown'])->default('shown');
             $table->string('username',100);
-            $table->string('first_name',100);
-            $table->string('last_name',100);
             $table->string('email',100)->unique();
             $table->string('phone',30)->unique();
             $table->string('password',100);
