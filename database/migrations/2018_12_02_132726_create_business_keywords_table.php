@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFormItemTypesTable extends Migration
+class CreateBusinessKeywordsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateFormItemTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_item_types', function (Blueprint $table) {
+        Schema::create('business_keywords', function (Blueprint $table) {
             $table->increments('id');
-
-            $table->string('name', 200);
-            $table->enum('type', ['text', 'number', 'file'])->default('text');
-
+            $table->unsignedInteger('branch_id');
+            $table->unsignedInteger('business_id');
+            $table->string('keyword',254);
+//            $table->string('type',254);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateFormItemTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form_item_types');
+        Schema::dropIfExists('business_keywords');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Form;
+use App\FormItem;
 use foo\bar;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -91,6 +92,11 @@ class FormController extends Controller
     }
 
     //add form-Items to the selected form
+
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function createFormItem($id)
     {
         $form = Form::find($id);
