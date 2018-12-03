@@ -9,19 +9,19 @@
                    
 
                     <div class="card-body">
-                        <div>{{ $business->summary }} </div>
+{{--                        <div>{{ $business->summary }} </div>--}}
                         {{ $business->description }} <hr/>
-                        {{ $business->email }} <hr/>
-                        {{ $business->zip_code }} <hr/>
-                        {{ $business->phone }} <hr/>
-                        {{ $business->fax }} <hr/>
-                        {{ $business->website }} <hr/>
-                        {{ $business->address }} <hr/>
-                        {{ $business->city }} <hr/>
-                        {{ $business->location }} <hr/>
-                        {{ $business->type }} <hr/>
-                        {{ $business->status }} <hr/>
-                        {{ $business->hasCountry($business->country)->country }} <hr/>
+                        {{--{{ $business->email }} <hr/>--}}
+                        {{--{{ $business->zip_code }} <hr/>--}}
+                        {{--{{ $business->phone }} <hr/>--}}
+                        {{--{{ $business->fax }} <hr/>--}}
+                        {{--{{ $business->website }} <hr/>--}}
+                        {{--{{ $business->address }} <hr/>--}}
+                        {{--{{ $business->city }} <hr/>--}}
+                        {{--{{ $business->location }} <hr/>--}}
+                        {{ $business->user_status }} <hr/>
+                        {{ $business->admin_status }} <hr/>
+{{--                        {{ $business->hasCountry($business->country)->country }} <hr/>--}}
                         <ul>
                             @foreach($business->categories as $category)
                                 <li>{{ $category->title }}</li>

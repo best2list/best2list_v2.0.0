@@ -18,7 +18,6 @@ class CreateBusinessKeywordsTable extends Migration
             $table->unsignedInteger('branch_id');
             $table->unsignedInteger('business_id');
             $table->string('keyword',254);
-//            $table->string('type',254);
             $table->timestamps();
             $table->softDeletes();
 

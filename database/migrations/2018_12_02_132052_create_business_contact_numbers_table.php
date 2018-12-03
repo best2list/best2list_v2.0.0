@@ -18,7 +18,6 @@ class CreateBusinessContactNumbersTable extends Migration
             $table->unsignedInteger('branch_id');
             $table->unsignedInteger('business_id');
             $table->string('number',254);
-//            $table->string('type',254);
             $table->timestamps();
             $table->softDeletes();
 
