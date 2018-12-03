@@ -20,6 +20,8 @@ class CreateBusinessVideosTable extends Migration
             $table->string('video_path',254);
 //            $table->string('type',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

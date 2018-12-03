@@ -19,6 +19,8 @@ class CreateSlideshowsTable extends Migration
             $table->string('altTag', 300)->nullable();
             $table->string('title', 300)->nullable();
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

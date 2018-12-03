@@ -19,10 +19,12 @@ class CreateBusinessesTable extends Migration
             $table->enum('delete', ['deleted' ,'shown'])->default('shown');
             $table->string('name', 100);
             $table->text('description');
-            $table->enum('admin_status', ['passive', 'active']);
+            $table->enum('admin_status', ['passive', 'active'])->default('passive');
             $table->enum('user_status', ['passive', 'active']);
             $table->string('logo', 300)->nullable();
             $table->timestamps();
+            $table->softDeletes();
+
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
 

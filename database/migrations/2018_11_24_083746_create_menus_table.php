@@ -19,6 +19,8 @@ class CreateMenusTable extends Migration
             $table->string('text', 4000);
             $table->enum('status', ['active', 'passive'])->default('active');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

@@ -20,6 +20,8 @@ class CreateCommentsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->enum('status', ['passive', 'active'])->defualt('passive');
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');
 
         });

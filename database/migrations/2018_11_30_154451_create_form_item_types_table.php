@@ -20,6 +20,8 @@ class CreateFormItemTypesTable extends Migration
             $table->enum('type', ['text', 'number', 'file'])->default('text');
 
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

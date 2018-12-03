@@ -19,6 +19,8 @@ class CreateFormsTable extends Migration
             $table->string('description',5000);
             $table->enum('status',['enable', 'disable'])->default('disable');
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

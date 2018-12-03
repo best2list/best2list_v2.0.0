@@ -18,6 +18,8 @@ class CreateFavoritesTable extends Migration
             $table->unsignedInteger('business_id');
             $table->unsignedInteger('user_id');
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });

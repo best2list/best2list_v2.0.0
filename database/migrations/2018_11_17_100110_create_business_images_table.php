@@ -18,7 +18,9 @@ class CreateBusinessImagesTable extends Migration
             $table->unsignedInteger('business_id');
             $table->string('image_path', 300);
             $table->timestamps();
-            $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');
+            $table->softDeletes();
+
+            $table->foreign('business_id')->references('id')->on('businesses')->onSoDelete('cascade')->onUpdate('cascade');
         });
     }
 

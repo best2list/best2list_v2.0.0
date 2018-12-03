@@ -4,9 +4,24 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Iatstuti\Database\Support\CascadeSoftDeletes;
+
+
 
 class Business extends Model
 {
+
+
+    use SoftDeletes,CascadeSoftDeletes;
+
+    protected $cascadeDeletes = ['businessImage','comments','favorites'];
+    protected $dates = ['deleted_at'];
+
+    public function businessImage()
+    {
+        return $this->hasMany(BusinessImage::class, 'business_id', 'id');
+    }
 
     public function categories()
     {
@@ -36,4 +51,5 @@ class Business extends Model
     {
         return Favorites::where('business_id',$id)->where('user_id', Auth::user()->id)->count();
     }
+
 }

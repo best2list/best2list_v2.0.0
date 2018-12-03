@@ -20,6 +20,8 @@ class CreateBusinessSocialNetworksTable extends Migration
             $table->string('url',254);
 //            $table->string('type',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

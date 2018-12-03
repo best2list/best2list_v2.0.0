@@ -20,6 +20,8 @@ class CreateBusinessContactNumbersTable extends Migration
             $table->string('number',254);
 //            $table->string('type',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

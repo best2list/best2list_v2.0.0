@@ -22,6 +22,8 @@ class CreateTicketSubjectsTable extends Migration
             $table->unsignedInteger('user_id')->nullable();
             $table->enum('status',['open', 'close'])->default('open');
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('ticket_cat_id')->references('id')->on('ticket_categories')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
 

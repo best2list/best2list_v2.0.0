@@ -27,6 +27,8 @@ class CreateFormItemsTable extends Migration
             $table->unsignedInteger('min')->default(0);
             $table->unsignedInteger('max');
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('form_id')->references('id')->on('forms')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('form_item_type_id')->references('id')->on('form_item_types')->onDelete('cascade')->onUpdate('cascade');
         });

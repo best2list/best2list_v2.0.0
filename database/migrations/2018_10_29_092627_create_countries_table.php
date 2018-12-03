@@ -18,6 +18,8 @@ class CreateCountriesTable extends Migration
             $table->string('country',100);
             $table->string('flag',100)->nullable();
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

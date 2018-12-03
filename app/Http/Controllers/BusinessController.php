@@ -46,27 +46,15 @@ class BusinessController extends Controller
     {
         $business = new Business;
         $business->user_id= Auth::user()->id;
-        $business->title = $request->title;
-        $business->summary = $request->summary;
+        $business->name = $request->title;
         $business->description = $request->description;
-        $business->email = $request->email;
-        $business->zip_code = $request->zip_code;
-        $business->phone = $request->fax;
-        $business->website = $request->website;
-        $business->address = $request->address;
-        $business->fax = $request->fax;
-        $business->status = 0;
-        $business->city = $request->city;
-        $business->location = $request->location;
-        $business->type = $request->type;
-        $business->country = $request->country;
-        $business->parent_id = $request->parent_id;
+        $business->user_status = 'passive';
         if($request->file('image_path')) {
             $image = $request->file('image_path');
             $newPath = 'images/business/'.date('Y')."/".date('m')."/".date('d')."/";
             $newName = date('Y_m_d_H_i_s') .'_'. Auth::user()->username.'.'. $image->getClientOriginalExtension();
             $image->move($newPath, $newName);
-            $business->image_path = $newPath.$newName;
+            $business->logo = $newPath.$newName;
         }
         $business->save();
         $business->categories()->sync($request->categories);

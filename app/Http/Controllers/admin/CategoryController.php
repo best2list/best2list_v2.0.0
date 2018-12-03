@@ -98,4 +98,5 @@ class CategoryController extends Controller
         $category->delete();
         return back();
     }
+
 }

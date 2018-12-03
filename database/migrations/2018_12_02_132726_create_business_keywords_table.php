@@ -20,6 +20,8 @@ class CreateBusinessKeywordsTable extends Migration
             $table->string('keyword',254);
 //            $table->string('type',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

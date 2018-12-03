@@ -25,6 +25,7 @@ class CreateBusinessBranchesTable extends Migration
             $table->string('address',255);
             $table->string('zip_code',25);
             $table->timestamps();
+            $table->softDeletes();
 
 
             $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');

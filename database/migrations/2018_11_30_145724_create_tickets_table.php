@@ -21,6 +21,8 @@ class CreateTicketsTable extends Migration
             $table->unsignedInteger('admin_id')->nullable();
             $table->enum('message_status', ['unseen', 'seen', 'replied'])->default('unseen');
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('subject_id')->references('id')->on('ticket_subjects')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('admin_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');

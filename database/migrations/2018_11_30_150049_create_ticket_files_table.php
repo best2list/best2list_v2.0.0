@@ -18,6 +18,8 @@ class CreateTicketFilesTable extends Migration
             $table->unsignedInteger('ticket_id');
             $table->string('file_path', 300);
             $table->timestamps();
+            $table->softDeletes();
+
             $table->foreign('ticket_id')->references('id')->on('tickets')->onDelete('cascade')->onUpdate('cascade');
         });
     }

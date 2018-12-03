@@ -19,6 +19,8 @@ class CreateBusinessWebsitesTable extends Migration
             $table->unsignedInteger('business_id');
             $table->string('website',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

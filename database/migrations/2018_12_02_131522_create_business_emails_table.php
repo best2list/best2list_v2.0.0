@@ -19,6 +19,8 @@ class CreateBusinessEmailsTable extends Migration
             $table->unsignedInteger('business_id');
             $table->string('email',254);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 

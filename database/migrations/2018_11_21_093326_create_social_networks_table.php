@@ -19,6 +19,8 @@ class CreateSocialNetworksTable extends Migration
             $table->string('color',50)->nullable();
             $table->string('address',100);
             $table->timestamps();
+            $table->softDeletes();
+
         });
     }
 
