@@ -1,0 +1,1 @@
+composer require iatstuti/laravel-cascade-soft-deletes

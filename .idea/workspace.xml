@@ -2,55 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dca4a8-23ad-473f-84b9-db4da59cee9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/form-label.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Business.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Business.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/business/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/business/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/business/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/src/CascadeSoftDeletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/src/CascadeSoftDeletes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/CascadeSoftDeletesIntegrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/CascadeSoftDeletesIntegrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/ChildPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/ChildPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/InvalidRelationshipPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/InvalidRelationshipPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/NonSoftDeletingPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/NonSoftDeletingPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithMissingRelationshipMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithMissingRelationshipMethod.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithStringCascade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithStringCascade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -219,24 +177,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="65" />
+          <entry key="php" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="6" />
-          <entry key="PHP" value="59" />
+          <entry key="Blade" value="10" />
+          <entry key="PHP" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1048" />
+          <entry key="php" value="1941" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="323" />
-          <entry key="PHP" value="725" />
+          <entry key="Blade" value="794" />
+          <entry key="PHP" value="1147" />
         </counts>
       </usages-collector>
     </session>
@@ -244,28 +202,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+            <state relative-caret-position="155">
+              <caret line="298" column="41" lean-forward="true" selection-start-line="296" selection-start-column="12" selection-end-line="298" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="150" selection-start-line="10" selection-start-column="150" selection-end-line="10" selection-end-column="150" />
+            <state relative-caret-position="238">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -299,16 +248,12 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_11_21_104849_create_faqs_table.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php" />
-        <option value="$PROJECT_DIR$/app/Business.php" />
         <option value="$PROJECT_DIR$/app/Favorites.php" />
         <option value="$PROJECT_DIR$/resources/views/country.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/business/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/business/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/form/form-item.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/form-label.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" />
@@ -334,6 +279,10 @@
         <option value="$PROJECT_DIR$/resources/views/show.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Business.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -346,6 +295,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpServers">
@@ -353,88 +303,88 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
-      <path value="$PROJECT_DIR$/vendor/symfony/process" />
-      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
-      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
-      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
-      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
-      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
-      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
-      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
-      <path value="$PROJECT_DIR$/vendor/intervention/image" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
-      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
-      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
-      <path value="$PROJECT_DIR$/vendor/matriphe/imageupload" />
-      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
-      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
-      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
-      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
-      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
-      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
-      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/matriphe/imageupload" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
-      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
-      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
-      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="310" />
     <option name="y" value="34" />
     <option name="width" value="748" />
@@ -520,6 +470,13 @@
             <path>
               <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -561,7 +518,7 @@
       <updated>1543735507077</updated>
       <workItem from="1543735508463" duration="19834000" />
       <workItem from="1543821367253" duration="14921000" />
-      <workItem from="1543904601358" duration="15278000" />
+      <workItem from="1543904601358" duration="21918000" />
     </task>
     <task id="LOCAL-00001" summary="soft deleted added (without delete children)&#10;&#10;home view edited">
       <created>1543839551459</created>
@@ -574,7 +531,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50033000" />
+    <option name="totallyTimeSpent" value="56673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -612,16 +569,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="soft deleted added (without delete children)&#10;&#10;home view edited" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/country.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -645,16 +592,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Business.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/business/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -676,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
-          <caret line="126" column="11" lean-forward="true" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/pagination.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -699,27 +629,10 @@
     <entry file="file://$PROJECT_DIR$/resources/lang/en/auth.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="180" column="188" selection-start-line="180" selection-start-column="188" selection-end-line="180" selection-end-column="188" />
-          <folding>
-            <element signature="e#7952#7973#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/form-label.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BusinessController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -854,20 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_15_065521_create_comments_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -921,8 +820,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-23">
           <caret line="10" column="150" selection-start-line="10" selection-start-column="150" selection-end-line="10" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Business.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BusinessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="298" column="41" lean-forward="true" selection-start-line="296" selection-start-column="12" selection-end-line="298" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>

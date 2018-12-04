@@ -128,30 +128,72 @@ class BusinessController extends Controller
     {
         $business = Business::find($business_id);
         $business->name = $request->name;
-        //$business->summary = $request->summary;
         $business->description = $request->description;
-//        $business->email = $request->email;
-//        $business->zip_code = $request->zip_code;
-//        $business->phone = $request->fax;
-//        $business->website = $request->website;
-//        $business->address = $request->address;
-//        $business->fax = $request->fax;
         $business->admin_status = 'passive';
         $business->user_status = 'active';
-//        $business->city = $request->city;
-//        $business->location = $request->location;
-//        $business->country = $request->country;
-        if($request->file('image_path')) {
+        if ($request->file('image_path')) {
             $image = $request->file('logo');
-            $newPath = 'images/business/'.date('Y')."/".date('m')."/".date('d')."/";
-            $newName = date('Y_m_d_H_i_s') .'_'. Auth::user()->username.'.'. $image->getClientOriginalExtension();
+            $newPath = 'images/business/' . date('Y') . "/" . date('m') . "/" . date('d') . "/";
+            $newName = date('Y_m_d_H_i_s') . '_' . Auth::user()->username . '.' . $image->getClientOriginalExtension();
             $image->move($newPath, $newName);
-            if(file_exists($business->image_path))
+            if (file_exists($business->image_path))
                 unlink(public_path($business->image_path));
-            $business->logo = $newPath.$newName;
+            $business->logo = $newPath . $newName;
         }
         $business->save();
         $business->categories()->sync($request->categories);
+
+        //insert branches
+        $branches = BusinessBranch::where('business_id', $business_id)->get();
+        foreach ($branches as $branch){
+            $branch->business_id = $business->id;
+            $branch->branch = $request->branch;
+            $branch->slug = str_slug($request->branch, '-');
+            $branch->country = $request->country;
+            $branch->province = $request->province;
+            $branch->city = $request->city;
+            $branch->location_x = 16564341;
+            $branch->location_y = 16564646;
+            $branch->address = $request->address;
+            $branch->zip_code = $request->zip_code;
+            $branch->save();
+
+            //insert emails
+            $emails = BusinessEmail::where('branch_id', $branch->id)->get();
+            foreach ($emails as $email) {
+                $email->email = $request->email;
+                $email->save();
+            }
+
+
+            //insert social networks
+
+            $socialNetworks = BusinessSocialNetwork::where('branch_id', $branch->id)->get();
+            foreach ($socialNetworks as $socialNetwork) {
+                $socialNetwork->business_id = $business->id;
+                $socialNetwork->branch_id = $branch->id;
+                $socialNetwork->url = $request->social_network;
+                $socialNetwork->save();
+            }
+            //insert websites
+            $websites = BusinessWebsite::where('branch_id', $branch->id)->get();
+            foreach ($websites as $website) {
+                $website->business_id = $business->id;
+                $website->branch_id = $branch->id;
+                $website->website = $request->website;
+                $website->save();
+            }
+
+            //insert contact numbers
+            $contactNumbers = BusinessContactNumber::where('branch_id', $branch->id)->get();
+            foreach ($contactNumbers as $contactNumber){
+                $contactNumber->business_id = $business->id;
+                $contactNumber->branch_id = $branch->id;
+                $contactNumber->number = $request->contact_number;
+                $contactNumber->save();
+            }
+        }
+
         return redirect()->route('index');
     }
 

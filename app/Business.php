@@ -28,6 +28,46 @@ class Business extends Model
         return $this->belongsToMany(Category::class,'businesses_to_categories');
     }
 
+    public function branches()
+    {
+        return $this->hasMany('App\BusinessBranch', 'business_id', 'id');
+    }
+
+    public function emails()
+    {
+        return $this->hasMany('App\BusinessEmail', 'business_id', 'id');
+    }
+
+    public function contactNumbers()
+    {
+        return $this->hasMany('App\BusinessContactNumber', 'business_id', 'id');
+    }
+
+    public function keywords()
+    {
+        return $this->hasMany('App\BusinessKeyword', 'business_id', 'id');
+    }
+
+    public function socialNetworks()
+    {
+        return $this->hasMany('App\BusinessSocialNetwork', 'business_id', 'id');
+    }
+
+    public function websites()
+    {
+        return $this->hasMany('App\BusinessWebsite', 'business_id', 'id');
+    }
+
+    public function videos()
+    {
+        return $this->hasMany('App\BusinessVideo', 'business_id', 'id');
+    }
+
+    public function images()
+    {
+        return $this->hasMany('App\BusinessImage', 'business_id', 'id');
+    }
+
     public function comments()
     {
         return $this->hasMany('App\Comment');
