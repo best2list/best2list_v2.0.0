@@ -15,8 +15,8 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title',100);
-            $table->string('text', 4000);
+            $table->string('title');
+            $table->text('text');
             $table->enum('status', ['active', 'passive'])->default('active');
             $table->timestamps();
             $table->softDeletes();

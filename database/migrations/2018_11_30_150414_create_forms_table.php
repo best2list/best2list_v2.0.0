@@ -15,8 +15,8 @@ class CreateFormsTable extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name',200);
-            $table->string('description',5000);
+            $table->string('name');
+            $table->text('description');
             $table->enum('status',['enable', 'disable'])->default('disable');
             $table->timestamps();
             $table->softDeletes();

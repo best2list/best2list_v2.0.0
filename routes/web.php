@@ -39,7 +39,7 @@ Route::get('/FAQ', 'HomeController@faq')->name('faq');
 Route::get('/category/{id}', 'HomeController@getCategory')->name('getCategory');
 Route::get('/country/{id}', 'HomeController@getCountry')->name('getCountry');
 Route::get('/menu/{id}', 'HomeController@showMenu')->name('showMenu');
-Route::get('/show/{id}', 'HomeController@showBusiness')->name('showBusiness');
+Route::get('/show/{id}/{slug}', 'HomeController@showBusiness')->name('showBusiness');
 Route::post('/show/add-comment/{id}', 'HomeController@addComment')->name('addComment');
 
 

@@ -24,7 +24,7 @@
                                 <td>{{ $business->id }}</td>
                                 <td><a href="{{ route('show', $business->id) }}"> {{ $business->name }}</a></td>
                                 <td>{{ $business->user_status }} |
-                                    <form action="{{ route('businessStatus', $business->id) }}/mybusiness/{{ $business->id }}/status" method="post">
+                                    <form action="{{ route('businessStatus', $business->id) }}" method="post">
                                         {{ method_field('put') }}
                                         {{csrf_field()}}
                                         <input type="submit" value="change">

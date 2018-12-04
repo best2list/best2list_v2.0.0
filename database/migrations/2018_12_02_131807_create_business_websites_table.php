@@ -17,7 +17,7 @@ class CreateBusinessWebsitesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('branch_id');
             $table->unsignedInteger('business_id');
-            $table->string('website',254);
+            $table->string('website');
             $table->timestamps();
             $table->softDeletes();
 

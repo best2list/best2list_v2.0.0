@@ -16,10 +16,10 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id')->unique();
             $table->enum('delete', ['deleted' ,'shown'])->default('shown');
-            $table->string('username',100);
-            $table->string('email',100)->unique();
+            $table->string('username');
+            $table->string('email')->unique();
             $table->string('phone',30)->unique();
-            $table->string('password',100);
+            $table->string('password');
             $table->enum('access',['admin','user'])->default('user');
             $table->enum('status',['active','passive'])->default('passive');
             $table->rememberToken();

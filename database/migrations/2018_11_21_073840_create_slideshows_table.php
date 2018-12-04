@@ -15,9 +15,9 @@ class CreateSlideshowsTable extends Migration
     {
         Schema::create('slideshows', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('image_path', 300);
-            $table->string('altTag', 300)->nullable();
-            $table->string('title', 300)->nullable();
+            $table->string('image_path');
+            $table->string('altTag')->nullable();
+            $table->string('title')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

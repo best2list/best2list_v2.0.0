@@ -15,9 +15,9 @@ class CreateSocialNetworksTable extends Migration
     {
         Schema::create('social_networks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('icon',100);
-            $table->string('color',50)->nullable();
-            $table->string('address',100);
+            $table->string('icon');
+            $table->string('color')->nullable();
+            $table->string('address');
             $table->timestamps();
             $table->softDeletes();
 

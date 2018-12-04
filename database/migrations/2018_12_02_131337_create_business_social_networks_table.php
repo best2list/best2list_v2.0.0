@@ -17,7 +17,7 @@ class CreateBusinessSocialNetworksTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('branch_id');
             $table->unsignedInteger('business_id');
-            $table->string('url',254);
+            $table->string('url');
             $table->timestamps();
             $table->softDeletes();
 

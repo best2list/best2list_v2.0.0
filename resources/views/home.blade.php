@@ -8,7 +8,7 @@
             <div class="media border-bottom mt-1">
                 <img class="align-self-start mr-3 col-2" src="@if($business->logo){{ $business->logo }} @else /image/download.png @endif" alt="Generic placeholder image">
                 <div class="media-body">
-                    <h4 class="mt-0 pt-1" style="font-size: 16px;"><a class="card-link text-primary" href="{{ route('showBusiness', $business->id) }}">{{ $business->name }}</a></h4>
+                    <h4 class="mt-0 pt-1" style="font-size: 16px;"><a class="card-link text-primary" href="/show/{{$business->id}}/{{$business->slug}}">{{ $business->name }}</a></h4>
                         @auth
                         <form method="post" action="{{ route('addToFavorite', $business->id) }}">
                             {{ method_field('put') }}

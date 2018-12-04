@@ -16,7 +16,7 @@ class CreateBusinessImagesTable extends Migration
         Schema::create('business_images', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('business_id');
-            $table->string('image_path', 300);
+            $table->string('image_path');
             $table->timestamps();
             $table->softDeletes();
 

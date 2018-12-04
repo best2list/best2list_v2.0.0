@@ -17,11 +17,12 @@ class CreateBusinessesTable extends Migration
             $table->increments('id')->unique();
             $table->unsignedInteger('user_id');
             $table->enum('delete', ['deleted' ,'shown'])->default('shown');
-            $table->string('name', 100);
+            $table->string('name');
+            $table->string('slug');
             $table->text('description');
             $table->enum('admin_status', ['passive', 'active'])->default('passive');
             $table->enum('user_status', ['passive', 'active']);
-            $table->string('logo', 300)->nullable();
+            $table->string('logo')->nullable();
             $table->timestamps();
             $table->softDeletes();
 

@@ -16,7 +16,7 @@ class CreateTicketFilesTable extends Migration
         Schema::create('ticket_files', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('ticket_id');
-            $table->string('file_path', 300);
+            $table->string('file_path');
             $table->timestamps();
             $table->softDeletes();
 

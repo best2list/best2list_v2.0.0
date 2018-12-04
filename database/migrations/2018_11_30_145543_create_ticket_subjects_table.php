@@ -16,8 +16,8 @@ class CreateTicketSubjectsTable extends Migration
         Schema::create('ticket_subjects', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->string('subject', 300);
-            $table->string('description',1000)->nullable();
+            $table->string('subject');
+            $table->string('description')->nullable();
             $table->unsignedInteger('ticket_cat_id')->nullable();
             $table->unsignedInteger('user_id')->nullable();
             $table->enum('status',['open', 'close'])->default('open');

@@ -44,7 +44,7 @@ class HomeController extends Controller
         return view('country',compact('businesses'));
     }
 
-    public function showBusiness($id)
+    public function showBusiness( $id, $slug )
     {
         $business = Business::find($id);
         $businessImages = BusinessImage::where('business_id', $id)->get();

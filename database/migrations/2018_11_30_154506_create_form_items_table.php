@@ -17,7 +17,7 @@ class CreateFormItemsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('form_id');
             $table->unsignedInteger('form_item_type_id');
-            $table->string('label', 200);
+            $table->string('label');
             $table->enum('mandatory', ['null', 'not-null'])->default('null');
             $table->enum('duplicate', ['duplicate', 'unique'])->default('duplicate');
             $table->enum('visibility', ['enable', 'disable', 'hidden'])->default('enable');

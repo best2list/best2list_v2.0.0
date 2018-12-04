@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Business;
+use App\BusinessBranch;
+use App\BusinessContactNumber;
+use App\BusinessEmail;
 use App\BusinessImage;
+use App\BusinessSocialNetwork;
+use App\BusinessWebsite;
 use App\Category;
 use App\Country;
 use App\Ticket;
@@ -44,13 +49,15 @@ class BusinessController extends Controller
 
     public function store(Request $request)
     {
+        //insert business
         $business = new Business;
         $business->user_id= Auth::user()->id;
-        $business->name = $request->title;
+        $business->name = $request->name;
+        $business->slug = str_slug( $request->name, '-' );
         $business->description = $request->description;
         $business->user_status = 'passive';
-        if($request->file('image_path')) {
-            $image = $request->file('image_path');
+        if($request->file('logo')) {
+            $image = $request->file('logo');
             $newPath = 'images/business/'.date('Y')."/".date('m')."/".date('d')."/";
             $newName = date('Y_m_d_H_i_s') .'_'. Auth::user()->username.'.'. $image->getClientOriginalExtension();
             $image->move($newPath, $newName);
@@ -58,6 +65,52 @@ class BusinessController extends Controller
         }
         $business->save();
         $business->categories()->sync($request->categories);
+
+        //inser branches
+        $branch = new BusinessBranch;
+        $branch->business_id = $business->id;
+        $branch->branch = $request->branch;
+        $branch->slug = str_slug( $request->branch, '-' );
+        $branch->country = $request->country;
+        $branch->province = $request->province;
+        $branch->city = $request->city;
+        $branch->location_x = 16564341;
+        $branch->location_y = 16564646;
+        $branch->address = $request->address;
+        $branch->zip_code = $request->zip_code;
+        $branch->save();
+
+        //insert emails
+        $email = new BusinessEmail;
+        $email->business_id = $business->id;
+        $email->branch_id = $branch->id;
+        $email->email = $request->email;
+        $email->save();
+
+        //insert social networks
+        $socialNetwork = new BusinessSocialNetwork;
+        $socialNetwork->business_id = $business->id;
+        $socialNetwork->branch_id = $branch->id;
+        $socialNetwork->url = $request->social_network;
+        $socialNetwork->save();
+
+        //insert websites
+        $website = new BusinessWebsite;
+        $website->business_id = $business->id;
+        $website->branch_id = $branch->id;
+        $website->website = $request->website;
+        $website->save();
+
+        //insert contact numbers
+        $contactNumber = new BusinessContactNumber;
+        $contactNumber->business_id = $business->id;
+        $contactNumber->branch_id = $branch->id;
+        $contactNumber->number = $request->contact_number;
+        $contactNumber->save();
+
+
+        //insert images and videos
+
         return redirect()->route('index');
     }
 
@@ -74,29 +127,28 @@ class BusinessController extends Controller
     public function update($business_id, Request $request)
     {
         $business = Business::find($business_id);
-        $business->title = $request->title;
-        $business->summary = $request->summary;
+        $business->name = $request->name;
+        //$business->summary = $request->summary;
         $business->description = $request->description;
-        $business->email = $request->email;
-        $business->zip_code = $request->zip_code;
-        $business->phone = $request->fax;
-        $business->website = $request->website;
-        $business->address = $request->address;
-        $business->fax = $request->fax;
-        $business->status = 0;
-        $business->city = $request->city;
-        $business->location = $request->location;
-        $business->type = $request->type;
-        $business->country = $request->country;
-        $business->parent_id = $request->parent_id;
+//        $business->email = $request->email;
+//        $business->zip_code = $request->zip_code;
+//        $business->phone = $request->fax;
+//        $business->website = $request->website;
+//        $business->address = $request->address;
+//        $business->fax = $request->fax;
+        $business->admin_status = 'passive';
+        $business->user_status = 'active';
+//        $business->city = $request->city;
+//        $business->location = $request->location;
+//        $business->country = $request->country;
         if($request->file('image_path')) {
-            $image = $request->file('image_path');
+            $image = $request->file('logo');
             $newPath = 'images/business/'.date('Y')."/".date('m')."/".date('d')."/";
             $newName = date('Y_m_d_H_i_s') .'_'. Auth::user()->username.'.'. $image->getClientOriginalExtension();
             $image->move($newPath, $newName);
             if(file_exists($business->image_path))
                 unlink(public_path($business->image_path));
-            $business->image_path = $newPath.$newName;
+            $business->logo = $newPath.$newName;
         }
         $business->save();
         $business->categories()->sync($request->categories);
@@ -113,10 +165,10 @@ class BusinessController extends Controller
     public function businessStatus($business_id)
     {
         $business = Business::find($business_id);
-        if($business->type == 'passive')
-            $business->type='active';
+        if($business->user_status == 'passive')
+            $business->user_status='active';
         else
-            $business->type='passive';
+            $business->user_status='passive';
         $business->save();
         return redirect()->route('index');
     }

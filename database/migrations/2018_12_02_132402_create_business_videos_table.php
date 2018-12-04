@@ -17,7 +17,7 @@ class CreateBusinessVideosTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('branch_id');
             $table->unsignedInteger('business_id');
-            $table->string('video_path',254);
+            $table->string('video_path');
             $table->timestamps();
             $table->softDeletes();
 

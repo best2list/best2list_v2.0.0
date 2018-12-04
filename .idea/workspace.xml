@@ -2,16 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dca4a8-23ad-473f-84b9-db4da59cee9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/form-label.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/business/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/business/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/business/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/business/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/country.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/country.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/src/CascadeSoftDeletes.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/src/CascadeSoftDeletes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/CascadeSoftDeletesIntegrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/CascadeSoftDeletesIntegrationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/ChildPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/ChildPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/InvalidRelationshipPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/InvalidRelationshipPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/NonSoftDeletingPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/NonSoftDeletingPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithMissingRelationshipMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithMissingRelationshipMethod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithStringCascade.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithStringCascade.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -171,41 +210,62 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="713401267">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="65" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Blade" value="6" />
+          <entry key="PHP" value="59" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="1048" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Blade" value="323" />
+          <entry key="PHP" value="725" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="187">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/business/show.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/business/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="453" column="4" selection-start-line="453" selection-start-column="4" selection-end-line="453" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="10" column="150" selection-start-line="10" selection-start-column="150" selection-end-line="10" selection-end-column="150" />
             </state>
           </provider>
         </entry>
@@ -223,11 +283,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Comment.php" />
-        <option value="$PROJECT_DIR$/app/Country.php" />
-        <option value="$PROJECT_DIR$/app/Faq.php" />
-        <option value="$PROJECT_DIR$/app/Form.php" />
-        <option value="$PROJECT_DIR$/app/FormItem.php" />
         <option value="$PROJECT_DIR$/app/FormItemType.php" />
         <option value="$PROJECT_DIR$/app/Menu.php" />
         <option value="$PROJECT_DIR$/app/slideshow.php" />
@@ -239,12 +294,26 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092627_create_countries_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_15_065521_create_comments_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_18_103014_create_favorites_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_11_21_104849_create_faqs_table.php" />
+        <option value="$PROJECT_DIR$/app/Category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Business.php" />
+        <option value="$PROJECT_DIR$/app/Favorites.php" />
+        <option value="$PROJECT_DIR$/resources/views/country.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/form/form-item.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/lang/en/form-label.php" />
+        <option value="$PROJECT_DIR$/resources/views/business/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_11_21_104849_create_faqs_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php" />
@@ -253,27 +322,18 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php" />
-        <option value="$PROJECT_DIR$/app/Category.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BusinessController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php" />
-        <option value="$PROJECT_DIR$/app/Business.php" />
-        <option value="$PROJECT_DIR$/app/Favorites.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/country.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/business/index.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/show.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -374,7 +434,7 @@
       <path value="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="310" />
     <option name="y" value="34" />
     <option name="width" value="748" />
@@ -385,6 +445,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,6 +457,30 @@
               <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
@@ -417,25 +502,40 @@
               <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="best2list_v2.0.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="best2list_v2.0.0" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\faramarzi\Desktop\v_2\best2list_v2.0.0\resources\lang\en" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -461,6 +561,7 @@
       <updated>1543735507077</updated>
       <workItem from="1543735508463" duration="19834000" />
       <workItem from="1543821367253" duration="14921000" />
+      <workItem from="1543904601358" duration="15278000" />
     </task>
     <task id="LOCAL-00001" summary="soft deleted added (without delete children)&#10;&#10;home view edited">
       <created>1543839551459</created>
@@ -473,13 +574,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34755000" />
+    <option name="totallyTimeSpent" value="50033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24071082" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24433658" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -492,7 +593,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4983845" visible="true" weight="0.1954023" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4983845" visible="true" weight="0.38638985" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016155" side_tool="true" weight="0.19770116" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -511,273 +612,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="soft deleted added (without delete children)&#10;&#10;home view edited" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/slideshow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/SocialNetwork.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketFiles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/TicketSubject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092627_create_countries_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_12_063003_create_businesses_to_categories.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_15_065521_create_comments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_18_103014_create_favorites_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_104849_create_faqs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Country.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/BusinessBranch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/CountryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="84" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BusinessController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-991">
-          <caret line="181" column="83" selection-start-line="181" selection-start-column="41" selection-end-line="181" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Favorites.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/BusinessImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#23#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -795,100 +629,300 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-523" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2886" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Business.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        <state relative-caret-position="867">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="e#23#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/category.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="453" column="4" selection-start-line="453" selection-start-column="4" selection-end-line="453" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/business/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/business/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        <state relative-caret-position="344">
+          <caret line="26" column="94" selection-start-line="26" selection-start-column="94" selection-end-line="26" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/form/form-item.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="142" column="105" selection-start-line="142" selection-start-column="102" selection-end-line="142" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/business/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="11" lean-forward="true" selection-start-line="126" selection-start-column="11" selection-end-line="126" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/pagination.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/passwords.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/auth.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/business/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="180" column="188" selection-start-line="180" selection-start-column="188" selection-end-line="180" selection-end-column="188" />
+          <folding>
+            <element signature="e#7952#7973#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/lang/en/form-label.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BusinessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="585" column="20" selection-start-line="585" selection-start-column="20" selection-end-line="585" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092627_create_countries_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092628_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_12_063003_create_businesses_to_categories.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145543_create_ticket_subjects_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145724_create_tickets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_154506_create_form_items_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131522_create_business_emails_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132052_create_business_contact_numbers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132402_create_business_videos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131807_create_business_websites_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131337_create_business_social_networks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_154451_create_form_item_types_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_150414_create_forms_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_150049_create_ticket_files_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_132726_create_business_keywords_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092629_create_businesses_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_02_131026_create_business_branches_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_15_065521_create_comments_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_17_100110_create_business_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_18_103014_create_favorites_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_073840_create_slideshows_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_093326_create_social_networks_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_21_104849_create_faqs_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_30_145128_create_ticket_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_10_29_092755_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_11_24_083746_create_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="150" selection-start-line="10" selection-start-column="150" selection-end-line="10" selection-end-column="150" />
         </state>
       </provider>
     </entry>
