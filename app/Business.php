@@ -15,12 +15,17 @@ class Business extends Model
 
     use SoftDeletes,CascadeSoftDeletes;
 
-    protected $cascadeDeletes = ['businessImage'];
+    protected $cascadeDeletes = ['businessImage','comments','businessToCategories','branches','emails','contactNumbers','keywords','socialNetworks','websites','videos','images','favorites'];
     protected $dates = ['deleted_at'];
 
     public function businessImage()
     {
         return $this->hasMany(BusinessImage::class, 'business_id', 'id');
+    }
+
+    public function businessToCategories()
+    {
+        return $this->hasMany(BusinessToCategory::class, 'business_id', 'id');
     }
 
     public function categories()
@@ -84,7 +89,7 @@ class Business extends Model
     }
     public function favorites()
     {
-        return $this->belongsToMany(Favorites::class);
+        return $this->hasMany(Favorites::class);
     }
 
     public function countFavorite($id)

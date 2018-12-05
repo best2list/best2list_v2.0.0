@@ -14,9 +14,17 @@ class CreateBusinessesToCategories extends Migration
     public function up()
     {
         Schema::create('businesses_to_categories', function (Blueprint $table) {
+            $table->increments('id');
             $table->unsignedInteger('business_id');
             $table->unsignedInteger('category_id');
             $table->unique(['business_id','category_id']);
+            $table->timestamps();
+            $table->softDeletes();
+
+
+
+
+
             $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
         });

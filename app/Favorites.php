@@ -16,10 +16,10 @@ class Favorites extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function business()
-    {
-        return $this->hasOne(Business::class, 'id', 'business_id');
-    }
+//    public function business()
+//    {
+//        return $this->hasOne(Business::class, 'id', 'business_id');
+//    }
     public function hasBusiness($business_id)
     {
         return Business::find($business_id);
