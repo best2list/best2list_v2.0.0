@@ -33,8 +33,8 @@
                         </td>
                         <td >{{ $ticketSubject->hasCategory($ticketSubject->ticket_cat_id) }}</td>
                         <td >{{ $ticketSubject->created_at }}</td>
-                        <td >{{ $ticketSubject->tickets()->latest()->value('created_at') }}</td>
-                        <td >{{ $ticketSubject->tickets()->latest()->value('created_at')->diffForHumans() }}</td>
+                        <td >@if($ticketSubject->tickets()->count()) $ticketSubject->tickets()->latest()->value('created_at') @else empty @endif</td>
+                        <td >@if($ticketSubject->tickets()->count())  $ticketSubject->tickets()->latest()->value('created_at')->diffForHumans() @else empty @endif</td>
                     </tr>
                     {{--{{ dd($ticketSubject->tickets()) }}--}}
                 @endforeach
