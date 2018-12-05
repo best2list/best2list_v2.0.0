@@ -15,7 +15,7 @@ class Business extends Model
 
     use SoftDeletes,CascadeSoftDeletes;
 
-    protected $cascadeDeletes = ['businessImage','comments','favorites'];
+    protected $cascadeDeletes = ['businessImage'];
     protected $dates = ['deleted_at'];
 
     public function businessImage()
