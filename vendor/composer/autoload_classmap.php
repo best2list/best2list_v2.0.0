@@ -1466,8 +1466,6 @@ return array(
     'Illuminate\\Support\\Carbon' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Carbon.php',
     'Illuminate\\Support\\Collection' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Collection.php',
     'Illuminate\\Support\\Composer' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Composer.php',
-    'Illuminate\\Support\\Debug\\Dumper' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Debug/Dumper.php',
-    'Illuminate\\Support\\Debug\\HtmlDumper' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Debug/HtmlDumper.php',
     'Illuminate\\Support\\Facades\\App' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/App.php',
     'Illuminate\\Support\\Facades\\Artisan' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/Artisan.php',
     'Illuminate\\Support\\Facades\\Auth' => $vendorDir . '/laravel/framework/src/Illuminate/Support/Facades/Auth.php',
