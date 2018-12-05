@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-//use Iatstuti\Database\Support\CascadeSoftDeletes;
+use Iatstuti\Database\Support\CascadeSoftDeletes;
 
 
 
@@ -12,10 +12,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Category extends Model
 {
 
-    use SoftDeletes;
-//        CascadeSoftDeletes;
-//
-//    protected $cascadeDeletes = ['parent_id'];
+    use SoftDeletes, CascadeSoftDeletes;
+
+    protected $cascadeDeletes = ['children'];
 
     protected $dates = ['deleted_at'];
 
