@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0dca4a8-23ad-473f-84b9-db4da59cee9e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/firstProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/firstProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/ticket/ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/ticket/ticket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/business/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/business/ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/business/ticket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/increments('id')" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/string('number'" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/string('type'" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unsignedInteger('branch_id')" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unsignedInteger('business_id')" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/php-parse" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/php-parse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/phpunit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/psysh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/psysh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/bin/var-dump-server" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bin/var-dump-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/src/CascadeSoftDeletes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/CascadeSoftDeletesIntegrationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Author.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/ChildPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/InvalidRelationshipPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/NonSoftDeletingPost.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithMissingRelationshipMethod.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/iatstuti/laravel-cascade-soft-deletes/tests/Entities/PostWithStringCascade.php" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
@@ -136,8 +156,10 @@
     <session id="-330993831">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.154" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -207,7 +229,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/ticket/ticket.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="531">
               <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
             </state>
           </provider>
@@ -527,6 +549,7 @@
       <workItem from="1543735508463" duration="19834000" />
       <workItem from="1543821367253" duration="14921000" />
       <workItem from="1543904601358" duration="24212000" />
+      <workItem from="1543992555719" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="soft deleted added (without delete children)&#10;&#10;home view edited">
       <created>1543839551459</created>
@@ -546,12 +569,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58967000" />
+    <option name="totallyTimeSpent" value="58997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24433658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21647818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -564,7 +587,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4983845" visible="true" weight="0.38638985" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4983845" visible="true" weight="0.18965517" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016155" side_tool="true" weight="0.19770116" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -887,7 +910,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/ticket/ticket.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="531">
           <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
         </state>
       </provider>
