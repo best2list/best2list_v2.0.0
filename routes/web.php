@@ -150,4 +150,11 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/ticket/store/{subject_id}','admin\TicketController@store')->name('adminStoreTicket');
     Route::put('/ticket/change-status/{subject_id}','admin\TicketController@changeTicketStatus')->name('changeTicketStatus');
 
+
+// admin business URLs
+    Route::get('/business','admin\BusinessController@index')->name('adminBusiness');
+    Route::put('/business/admin-status/{id}','admin\BusinessController@changeAdminStatus')->name('changeAdminStatus');
+    Route::delete('/business/delete/{id}','admin\BusinessController@adminBusinessDestroy')->name('adminBusinessDestroy');
+
+
 });
