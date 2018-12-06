@@ -11,7 +11,7 @@ class BusinessBranch extends Model
 {
     use SoftDeletes,CascadeSoftDeletes;
 
-    protected $cascadeDeletes = ['businessImage','comments','businessToCategories','branches','emails','contactNumbers','keywords','socialNetworks','websites','videos','images','favorites'];
+    protected $cascadeDeletes = ['businessImage','branches','emails','contactNumbers','keywords','socialNetworks','websites','videos','images'];
     protected $dates = ['deleted_at'];
 
     public function businessImage()

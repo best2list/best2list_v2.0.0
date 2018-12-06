@@ -14,7 +14,7 @@ class Category extends Model
 
     use SoftDeletes, CascadeSoftDeletes;
 
-    protected $cascadeDeletes = ['children'];
+    protected $cascadeDeletes = ['children','businessToCategories'];
 
     protected $dates = ['deleted_at'];
 
