@@ -62,12 +62,11 @@
                             <td>{{ $faq->id }}</td>
                             <td>{{ $faq->question }}</td>
                             <td>{{ $faq->answer }}</td>
-                            <td><a href="{{ route('editFAQ', $faq->id) }}">edit</a></td>
+                            <td><a class="btn btn-warning" href="{{ route('editFAQ', $faq->id) }}"><i class="fas fa-edit"></i></a></td>
                             <td><form action="{{ route("destroyFAQ",$faq->id) }}" method="post">
                                     {{ method_field('delete') }}
                                     @csrf
-                                    <input type="submit" value="delete" class="btn btn-danger">
-                                </form>
+                                    <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>                                </form>
                             </td>
                         </tr>
                     @endforeach

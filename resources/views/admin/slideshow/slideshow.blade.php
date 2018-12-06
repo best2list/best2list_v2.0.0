@@ -66,8 +66,7 @@
             {{method_field('delete')}}
             @csrf
             <br/>
-            <input type="submit" value="delete" class="btn btn-danger"/>
-        </form>
+            <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>        </form>
         <hr/>
     @endforeach
 

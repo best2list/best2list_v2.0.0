@@ -70,11 +70,11 @@
                                             @csrf
                                             <input type="submit" value="change status" class="btn btn-primary">
                                         </form></td>
-                                    <td><a href="{{ route('editMenu', $menu->id) }}">edit</a></td>
+                                    <td><a class="btn btn-warning" href="{{ route('editMenu', $menu->id) }} "><i class="fas fa-edit"></i></a></td>
                                     <td><form action="{{ route('destroyMenu', $menu->id) }}" method="post">
                                             {{ method_field('delete') }}
                                             @csrf
-                                            <input type="submit" value="delete" class="btn btn-danger">
+                                            <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>
                                         </form>
                                     </td>
                                 </tr>

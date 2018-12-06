@@ -18,9 +18,9 @@ class CreateBusinessBranchesTable extends Migration
             $table->unsignedInteger('business_id');
             $table->string('branch',100);
             $table->string('slug');
-            $table->string('country',100);
-            $table->string('province',100);
-            $table->string('city',100);
+            $table->unsignedInteger('country_id');
+            $table->unsignedInteger('province_id');
+            $table->unsignedInteger('city_id');
             $table->integer('location_x');
             $table->integer('location_y');
             $table->string('address',255);

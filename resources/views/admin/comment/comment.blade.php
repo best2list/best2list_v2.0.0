@@ -29,8 +29,7 @@
                                             <form action="{{ route('commentDestroy', $comment->id) }}" method="post">
                                                 {{ method_field('delete') }}
                                                 {{csrf_field()}}
-                                                <input type="submit" class="btn btn-danger" value="delete">
-                                            </form>
+                                                <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
