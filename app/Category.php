@@ -38,4 +38,9 @@ class Category extends Model
         return $this->hasMany(static::class, 'parent_id')->orderBy('title', 'asc');
     }
 
+    public function businessToCategories()
+    {
+        return $this->hasMany(BusinessToCategory::class, 'business_id', 'id');
+    }
+
 }

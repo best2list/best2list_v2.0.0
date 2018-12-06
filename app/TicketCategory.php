@@ -12,4 +12,9 @@ class TicketCategory extends Model
     protected $dates = ['deleted_at'];
 
     protected $table= 'ticket_categories';
+
+    public function ticketSubjects()
+    {
+        return $this->hasMany(TicketSubject::class,'ticket_cat_id', 'id');
+    }
 }
