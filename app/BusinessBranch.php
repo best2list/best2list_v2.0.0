@@ -54,4 +54,8 @@ class BusinessBranch extends Model
         return $this->hasMany('App\BusinessImage', 'business_id', 'id');
     }
 
+    public function hasBusiness($id)
+    {
+        return Business::find($id);
+    }
 }

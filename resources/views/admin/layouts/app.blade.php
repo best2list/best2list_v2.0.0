@@ -9,10 +9,10 @@
 
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-2 pt-2 bg-dark">
+                <div class="col-12 col-md-2 pt-2 bg-dark">
                     @include('admin.layouts.side-bar')
                 </div>
-                <div class="col-md-10 pt-2">
+                <div class="col pt-2">
                     @yield('content')
                 </div>
             </div>

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBusinessBranchesTable extends Migration
+class CreateCitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,25 +13,17 @@ class CreateBusinessBranchesTable extends Migration
      */
     public function up()
     {
-        Schema::create('business_branches', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('business_id');
-            $table->string('branch',100);
-            $table->string('slug');
+            $table->string('name');
             $table->unsignedInteger('country_id');
             $table->unsignedInteger('province_id');
-            $table->unsignedInteger('city_id');
-            $table->integer('location_x');
-            $table->integer('location_y');
-            $table->string('address',255);
-            $table->string('zip_code',25);
+            $table->decimal('x_location');
+            $table->decimal('y_location');
             $table->timestamps();
             $table->softDeletes();
-
-            $table->foreign('business_id')->references('id')->on('businesses')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('province_id')->references('id')->on('provinces')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 
@@ -42,6 +34,6 @@ class CreateBusinessBranchesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('business_branches');
+        Schema::dropIfExists('cities');
     }
 }

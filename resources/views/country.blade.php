@@ -3,17 +3,17 @@
     @parent
 @endsection
 @section('content')
-    @foreach($businesses as $business)
+    @foreach($branches as $branch)
         <div class="media border-bottom mt-1">
-            <img class="align-self-start mr-3 col-2 " src="@if($business->logo){{ url($business->logo) }} @else /image/download.png @endif" alt="Generic placeholder image">
+            <img class="align-self-start mr-3 col-2 " src="@if($branch->hasBusiness($branch->business_id)->logo){{ url($branch->hasBusiness($branch->business_id)->logo) }} @else /image/download.png @endif" alt="Generic placeholder image">
             <div class="media-body">
-                <h4 class="mt-0 pt-1" style="font-size: 16px;"><a class="card-link text-primary" href="{{ route('showBusiness', $business->id) }}">{{ $business->name }}</a></h4>
+                <h4 class="mt-0 pt-1" style="font-size: 16px;"><a class="card-link text-primary" href="">{{ $branch->hasBusiness($branch->business_id)->name }}</a></h4>
                 @auth()
-                    <form method="post" action="{{ route('addToFavorite', $business->id) }}">
+                    <form method="post" action="{{ route('addToFavorite', $branch->hasBusiness($branch->business_id)->id) }}">
                         {{ method_field('put') }}
 
                         @csrf
-                        @if($business->countFavorite($business->id)==0)
+                        @if($branch->hasBusiness($branch->business_id)->countFavorite($branch->hasBusiness($branch->business_id)->id)==0)
                             <input type="submit" value="add to favorite" class="btn-sm btn-warning float-right">
                         @else
                             <input type="submit" value="remove favorite" class="btn-sm btn-danger float-right">
@@ -27,6 +27,6 @@
         </div>
     @endforeach
     <div class="media justify-content-center mt-3">
-        {{ $businesses->links() }}
+        {{ $branches->links() }}
     </div>
 @endsection

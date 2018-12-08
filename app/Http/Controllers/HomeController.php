@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\BusinessBranch;
 use App\BusinessImage;
 use App\Category;
 use App\Comment;
@@ -40,8 +41,8 @@ class HomeController extends Controller
 
     public function getCountry($id)
     {
-        $businesses = Business::where('country',$id)->paginate(5);
-        return view('country',compact('businesses'));
+        $branches = BusinessBranch::where('country_id',$id)->paginate(5);
+        return view('country',compact('branches'));
     }
 
     public function showBusiness( $id, $slug )

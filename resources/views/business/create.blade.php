@@ -92,14 +92,14 @@
                 <label for="country" class="col-sm-4 col-form-label text-md-right">{{ __('form-label.country') }}</label>
 
                 <div class="col-md-6">
-                    <select id="country"  class="form-control{{ $errors->has('categories') ? ' is-invalid' : '' }}" name="country" >
+                    <select id="country"  class="form-control{{ $errors->has('country') ? ' is-invalid' : '' }}" name="country" >
                         @foreach($countries as $country)
-                            <option value="{{ $country->id }}">{{ $country->country }}</option>
+                            <option value="{{ $country->id }}">{{ $country->name }}</option>
                         @endforeach
                     </select>
-                    @if ($errors->has('categories'))
+                    @if ($errors->has('country'))
                         <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('categories') }}</strong>
+                        <strong>{{ $errors->first('country') }}</strong>
                     </span>
                     @endif
                 </div>
@@ -109,13 +109,13 @@
 
                 <div class="col-md-6">
                     <select id="province"  class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" name="province">
-                        @foreach($countries as $country)
-                            <option value="{{ $country->id }}">{{ $country->country }}</option>
+                        @foreach($provinces as $province)
+                            <option value="{{ $province->id }}">{{ $province->name }}</option>
                         @endforeach
                     </select>
-                    @if ($errors->has('categories'))
+                    @if ($errors->has('province'))
                         <span class="invalid-feedback" role="alert">
-                        <strong>{{ $errors->first('categories') }}</strong>
+                        <strong>{{ $errors->first('province') }}</strong>
                     </span>
                     @endif
                 </div>
@@ -125,8 +125,8 @@
 
                 <div class="col-md-6">
                     <select id="city"  class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city">
-                        @foreach($countries as $country)
-                            <option value="{{ $country->id }}">{{ $country->country }}</option>
+                        @foreach($cities as $city)
+                            <option value="{{ $city->id }}">{{ $city->name }}</option>
                         @endforeach
                     </select>
                     @if ($errors->has('city'))

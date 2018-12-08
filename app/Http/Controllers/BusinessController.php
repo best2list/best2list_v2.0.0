@@ -11,6 +11,8 @@ use App\BusinessSocialNetwork;
 use App\BusinessWebsite;
 use App\Category;
 use App\Country;
+use App\Province;
+use App\City;
 use App\Ticket;
 use App\TicketCategory;
 use App\TicketFiles;
@@ -43,8 +45,10 @@ class BusinessController extends Controller
     {
         $categories = Category::all();
         $countries = Country::all();
+        $provinces = Province::all();
+        $cities = City::all();
         $businesses = Business::all()->where('user_id',Auth::id());
-        return view('business.create', compact('categories','countries','businesses'));
+        return view('business.create', compact('categories','countries','businesses', 'provinces', 'cities'));
     }
 
     public function store(Request $request)
@@ -71,9 +75,9 @@ class BusinessController extends Controller
         $branch->business_id = $business->id;
         $branch->branch = $request->branch;
         $branch->slug = str_slug( $request->branch, '-' );
-        $branch->country = $request->country;
-        $branch->province = $request->province;
-        $branch->city = $request->city;
+        $branch->country_id = $request->country;
+        $branch->province_id = $request->province;
+        $branch->city_id = $request->city;
         $branch->location_x = 16564341;
         $branch->location_y = 16564646;
         $branch->address = $request->address;
@@ -120,8 +124,10 @@ class BusinessController extends Controller
         $businesses = Business::all()->where('user_id',Auth::id());
         $categories = Category::all();
         $countries = Country::all();
+        $provinces = Province::all();
+        $cities = City::all();
         $businessImages = BusinessImage::where('business_id', $business_id)->get();
-        return view('business.edit', compact('business', 'businesses', 'categories','countries', 'businessImages'));
+        return view('business.edit', compact('business', 'businesses', 'categories','countries', 'businessImages', 'provinces', 'cities'));
     }
 
     public function update($business_id, Request $request)
@@ -149,9 +155,9 @@ class BusinessController extends Controller
             $branch->business_id = $business->id;
             $branch->branch = $request->branch;
             $branch->slug = str_slug($request->branch, '-');
-            $branch->country = $request->country;
-            $branch->province = $request->province;
-            $branch->city = $request->city;
+            $branch->country_id = $request->country;
+            $branch->province_id = $request->province;
+            $branch->city_id = $request->city;
             $branch->location_x = 16564341;
             $branch->location_y = 16564646;
             $branch->address = $request->address;

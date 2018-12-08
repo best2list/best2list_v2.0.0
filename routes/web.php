@@ -96,6 +96,24 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/country/store','admin\CountryController@store')->name('storeCountry');
     Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
     Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
+    // admin province URLs
+    Route::get('/province/{id}', 'admin\CountryController@province')->name('province');
+    Route::post('/province/store/{id}', 'admin\CountryController@storeProvince')->name('storeProvince');
+    Route::get('/province/edit/{id}', 'admin\CountryController@editProvince')->name('editProvince');
+    Route::put('/province/update/{id}', 'admin\CountryController@updateProvince')->name('updateProvince');
+//    Route::get('/country/edit/{id}', 'admin\CountryController@edit')->name('editCountry');
+//    Route::post('/country/store','admin\CountryController@store')->name('storeCountry');
+//    Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
+//    Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
+    // admin cities URLs
+        Route::get('/city/{id}', 'admin\CountryController@city')->name('city');
+        Route::post('/city/store/{id}', 'admin\CountryController@storeCity')->name('storeCity');
+        Route::get('/city/edit/{id}', 'admin\CountryController@editCity')->name('editCity');
+        Route::put('/city/update/{id}', 'admin\CountryController@updateCity')->name('updateCity');
+    //    Route::get('/country/edit/{id}', 'admin\CountryController@edit')->name('editCountry');
+    //    Route::post('/country/store','admin\CountryController@store')->name('storeCountry');
+    //    Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
+    //    Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
 
 
 // admin category URLs
@@ -104,6 +122,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/category/store','admin\CategoryController@store')->name('storeCategory');
     Route::put('/category/update/{id}','admin\CategoryController@update')->name('updateCategory');
     Route::delete('/category/delete/{category_id}', 'admin\CategoryController@destroy')->name('categoryDestroy');
+
 
 
 // admin FAQ URLs

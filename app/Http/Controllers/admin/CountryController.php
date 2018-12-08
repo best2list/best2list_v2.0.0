@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\admin;
 
+use App\City;
+use App\Province;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Country;
@@ -44,7 +46,10 @@ class CountryController extends Controller
             $newpath = 'images/country/';
             $flag->move($newpath, $newName);
 
-            $country->country = $request->country;
+            $country->name = $request->country;
+            $country->country_code = $request->country_code;
+            $country->x_location = '98876.76';
+            $country->y_location = '98675.86';
             $country->flag = $newpath.$newName;
             $country->save();
         }
@@ -74,7 +79,7 @@ class CountryController extends Controller
     public function edit($id)
     {
       $country = Country::find($id);
-      return view('admin.country.edit_country', compact('country'));
+      return view('admin.country.edit-country', compact('country'));
 
     }
 
@@ -88,7 +93,10 @@ class CountryController extends Controller
     public function update(Request $request, $id)
     {
         $country = Country::find($id);
-        $country->country = $request->country;
+        $country->name = $request->country;
+        $country->country_code = $request->country_code;
+        $country->x_location = '98876.76';
+        $country->y_location = '98675.86';
         if ($request->file('flag')) {
             $flag = $request->file('flag');
             $newName = date('Y_m_d_H_i_s') . '_' . $request->country . "." . $flag->getClientOriginalExtension();
@@ -114,5 +122,72 @@ class CountryController extends Controller
         $country = Country::find($id);
         $country->delete();
         return back();
+    }
+
+    public function province($id)
+    {
+        $country = Country::find($id);
+        return view('admin.country.province', compact('country'));
+    }
+
+    public function storeProvince($id, Request $request)
+    {
+        $province = new Province;
+        $province->name = $request->province;
+        $province->country_id = $id;
+        $province->save();
+        return back();
+    }
+
+    public function editProvince($id)
+    {
+        $countries = Country::all();
+        $province = Province::find($id);
+        return view('admin.country.edit-province', compact('countries', 'province'));
+    }
+
+    public function updateProvince($id, Request $request)
+    {
+        $province = Province::find($id);
+        $province->name = $request->province;
+        $province->country_id = $request->country;
+        $province->save();
+        return redirect()->route('province', $request->country);
+    }
+    public function city($id)
+    {
+        $province = Province::find($id);
+        return view('admin.country.city', compact('province'));
+    }
+
+    public function storeCity($id, Request $request)
+    {
+        $city = new City;
+        $city->name = $request->city;
+        $city->province_id = $id;
+        $country_id = Province::find($id)->country_id;
+        $city->country_id = $country_id;
+        $city->x_location = 43656.43;
+        $city->y_location = 45636.54;
+        $city->save();
+        return back();
+    }
+
+    public function editCity($id)
+    {
+        $countries = Country::all();
+        $provinces = Province::all();
+        $city = City::find($id);
+        return view('admin.country.edit-city', compact('countries', 'provinces', 'city'));
+    }
+
+    public function updateCity($id, Request $request)
+    {
+        $city = City::find($id);
+        $city->name = $request->city;
+        $city->province_id = $request->province;
+        $city->country_id = $request->country;
+        $city->save();
+        return redirect()->route('city', $request->province);
     }
 }

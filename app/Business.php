@@ -80,7 +80,7 @@ class Business extends Model
 
     public function hasCategory($id)
     {
-        return in_array($id, $this->categories()->pluck('id')->toArray());
+        return in_array($id, $this->categories()->pluck('category_id')->toArray());
     }
 
     public function hasCountry($id)

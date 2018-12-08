@@ -104,7 +104,7 @@
                     <div class="col-md-6">
                         <select id="country"  class="form-control{{ $errors->has('categories') ? ' is-invalid' : '' }}" name="country" >
                             @foreach($countries as $country)
-                                <option value="{{ $country->id }}" @if($branch->country == $country->id) selected @endif>{{ $country->country }}</option>
+                                <option value="{{ $country->id }}" @if($branch->country_id == $country->id) selected @endif>{{ $country->name }}</option>
                             @endforeach
                         </select>
                         @if ($errors->has('categories'))
@@ -119,8 +119,8 @@
 
                     <div class="col-md-6">
                         <select id="province"  class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" name="province">
-                            @foreach($countries as $country)
-                                <option value="{{ $country->id }}" @if($branch->province == $country->id) selected @endif>{{ $country->country }}</option>
+                            @foreach($provinces as $province)
+                                <option value="{{ $province->id }}">{{ $province->name }}</option>
                             @endforeach
                         </select>
                         @if ($errors->has('categories'))
@@ -135,8 +135,8 @@
 
                     <div class="col-md-6">
                         <select id="city"  class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}" name="city">
-                            @foreach($countries as $country)
-                                <option value="{{ $country->id }}" @if($branch->city == $country->id) selected @endif>{{ $country->country }}</option>
+                            @foreach($cities as $city)
+                                <option value="{{ $city->id }}">{{ $city->name }}</option>
                             @endforeach
                         </select>
                         @if ($errors->has('city'))

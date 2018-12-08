@@ -14,7 +14,7 @@
                                 <label for="country" class="col-sm-4 col-form-label text-md-right">{{ __('country') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="country" type="text" class="form-control{{ $errors->has('country') ? ' is-invalid' : '' }}" name="country" autofocus value="{{ $country->country }}">
+                                    <input id="country" type="text" class="form-control{{ $errors->has('country') ? ' is-invalid' : '' }}" name="country" autofocus value="{{ $country->name }}">
                                     <!-- @if ($errors->has('country'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('image_path') }}</strong>
@@ -23,8 +23,22 @@
                                 </div>
                             </div>
 
+                          <div class="form-group row">
+                              <label for="country_code" class="col-sm-4 col-form-label text-md-right">{{ __('country_code') }}</label>
 
-                            <div class="form-group row">
+                              <div class="col-md-6">
+                                  <input id="country_code" type="text" class="form-control{{ $errors->has('country_code') ? ' is-invalid' : '' }}" name="country_code" value="{{ $country->country_code }}" required autofocus>
+
+                                  @if ($errors->has('country_code'))
+                                      <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('country_code') }}</strong>
+                                    </span>
+                                  @endif
+                              </div>
+                          </div>
+
+
+                          <div class="form-group row">
                                   <label for="flag" class="col-sm-4 col-form-label text-md-right">{{ __('flag') }}</label>
 
                                   <div class="col-md-6">
