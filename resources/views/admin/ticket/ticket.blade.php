@@ -4,6 +4,8 @@
     <div class="card">
         <div class="card-header">ticket subjects</div>
         <div class="card-body">
+            <a href="{{ route('createTicketCategory') }}">add new ticket category</a>
+            <hr>
             <table class="table table-bordered text-center">
                 <tr>
                     <td>id</td>
@@ -33,8 +35,8 @@
                         </td>
                         <td >{{ $ticketSubject->hasCategory($ticketSubject->ticket_cat_id) }}</td>
                         <td >{{ $ticketSubject->created_at }}</td>
-                        <td >@if($ticketSubject->tickets()->count()) $ticketSubject->tickets()->latest()->value('created_at') @else empty @endif</td>
-                        <td >@if($ticketSubject->tickets()->count())  $ticketSubject->tickets()->latest()->value('created_at')->diffForHumans() @else empty @endif</td>
+                        <td >@if($ticketSubject->tickets()->count()) {{ $ticketSubject->tickets()->latest()->value('created_at') }} @else empty @endif</td>
+                        <td >@if($ticketSubject->tickets()->count()) {{ $ticketSubject->tickets()->latest()->value('created_at')->diffForHumans() }} @else empty @endif</td>
                     </tr>
                     {{--{{ dd($ticketSubject->tickets()) }}--}}
                 @endforeach

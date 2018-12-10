@@ -10,6 +10,7 @@
                                     <td>user ID</td>
                                     <td>comment</td>
                                     <td>status</td>
+                                    <td>edit</td>
                                     <td>delete</td>
                                 </tr>
                                 @foreach($comments as $comment)
@@ -25,6 +26,7 @@
                                                 <input type="submit" value="change">
                                             </form>
                                         </td>
+                                        <td><a class="btn btn-warning" href="{{ route("commentEdit",$comment->id) }}"><i class="fas fa-edit"></i></a> </td>
                                         <td>
                                             <form action="{{ route('commentDestroy', $comment->id) }}" method="post">
                                                 {{ method_field('delete') }}

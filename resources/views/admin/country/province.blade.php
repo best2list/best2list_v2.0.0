@@ -47,7 +47,7 @@
                                     <td>{{ $province->name }}</td>
                                     <td><a href="{{ route('city', $province->id) }}">{{ $province->name }} cites <span class="badge badge-dark">{{ $province->cities()->count() }}</span></a></td>
                                     <td><a class="btn btn-warning" href="{{ route("editProvince",$province->id) }}"><i class="fas fa-edit"></i></a> </td>
-                                    <td><form action="{{ route('countryDestroy', $country->id) }}" method="post">
+                                    <td><form action="{{ route('provinceDestroy', $province->id) }}" method="post">
                                             {{ method_field('delete') }}
                                             @csrf
                                             <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>

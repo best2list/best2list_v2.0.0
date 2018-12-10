@@ -69,7 +69,7 @@
                             <input type="submit" value="change">
                         </form>
                     </td>
-                    <td><a class="btn btn-warning" href="{{ route('adminBusiness', $business->id) }}" ><i class="fas fa-edit"></i></a> </td>
+                    <td><a class="btn btn-warning" href="{{ route('adminEditBusiness', $business->id) }}" ><i class="fas fa-edit"></i></a> </td>
                     <td>
                         <form action="{{ route('adminBusinessDestroy',$business->id) }}" method="post">
                             {{method_field('delete')}}

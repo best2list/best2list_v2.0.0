@@ -13,6 +13,7 @@ class BusinessBranch extends Model
 
     protected $cascadeDeletes = ['businessImage','branches','emails','contactNumbers','keywords','socialNetworks','websites','videos','images'];
     protected $dates = ['deleted_at'];
+    protected $table= 'business_branches';
 
     public function businessImage()
     {

@@ -7,9 +7,9 @@
             @foreach($tickets as $ticket)
                 <div class="p-0 alert @if($ticket->user_id) alert-primary @else alert-success @endif">
                     @if($ticket->user_id)
-                        <div class="bg-primary text-white p-1 pl-3 mb-1 rounded-top">{{ $ticket->hasUsername($ticket->user_id) }} <span>{{ $ticket->message_status }}</span></div>
+                        <div class="bg-primary text-white p-1 pl-3 pr-3 mb-1 rounded-top">{{ $ticket->hasUsername($ticket->user_id) }} <span>{{ $ticket->message_status }}</span> <span class="float-right">{{ $ticket->created_at->diffForHumans() }}</span></div>
                     @else
-                        <div class="bg-success text-white p-1 pl-3 mb-1 rounded-top">{{ $ticket->hasUsername($ticket->admin_id) }} <span>{{ $ticket->message_status }}</span></div>
+                        <div class="bg-success text-white p-1 pl-3 pr-3 mb-1 rounded-top">{{ $ticket->hasUsername($ticket->admin_id) }} <span>{{ $ticket->message_status }}</span> <span class="float-right">{{ $ticket->created_at->diffForHumans() }}</span></div>
                     @endif
                     <div class="p-3 pl-4">{{ $ticket->message }}</div>
                     <span class="@if($ticket->message_status == 'unseen') text-danger @elseif($ticket->message_status == 'seen') text-primary @else text-success @endif">{{ $ticket->status }}</span>

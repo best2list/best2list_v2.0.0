@@ -45,7 +45,7 @@
                                     <td>{{ $city->id }}</td>
                                     <td>{{ $city->name }}</td>
                                     <td><a class="btn btn-warning" href="{{ route("editCity",$city->id) }}"><i class="fas fa-edit"></i></a> </td>
-                                    <td><form action="{{ route('countryDestroy', $city->id) }}" method="post">
+                                    <td><form action="{{ route('cityDestroy', $city->id) }}" method="post">
                                             {{ method_field('delete') }}
                                             @csrf
                                             <button type="submit" class="btn-sm btn-danger text-dark"><i class="fas fa-trash-alt"></i></button>

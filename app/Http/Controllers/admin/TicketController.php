@@ -130,4 +130,39 @@ class TicketController extends Controller
         $ticketSubject->save();
         return back();
     }
+
+    public function createTicketCategory()
+    {
+        $ticketCategories = TicketCategory::all();
+        return view('admin.ticket.ticket-category', compact('ticketCategories'));
+    }
+
+    public function storeTicketCategory(Request $request)
+    {
+        $ticketCategory = new TicketCategory;
+        $ticketCategory->name = $request->ticketCategory;
+        $ticketCategory->save();
+        return back();
+    }
+
+    public function editTicketCategory($id)
+    {
+        $ticketCategory = TicketCategory::find($id);
+        return view('admin.ticket.edit-ticket-category', compact('ticketCategory'));
+    }
+
+    public function updateTicketCategory($id, Request $request)
+    {
+        $ticketCategory = TicketCategory::find($id);
+        $ticketCategory->name = $request->ticketCategory;
+        $ticketCategory->save();
+        return redirect()->route('createTicketCategory');
+    }
+
+    public function destroyTicketCategory($id)
+    {
+        $ticketCategory = TicketCategory::find($id);
+        $ticketCategory->delete();
+        return back();
+    }
 }

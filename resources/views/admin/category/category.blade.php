@@ -25,8 +25,16 @@
                     <label for="parent_id" class="col-sm-4 col-form-label text-md-right">{{ __('parent_id') }}</label>
 
                     <div class="col-md-6">
-                        <input id="parent_id" type="text" class="form-control{{ $errors->has('parent_id') ? ' is-invalid' : '' }}" name="parent_id" value="{{ old('parent_id') }}" autofocus>
-
+                        {{--{{ dd($selectCategories) }}--}}
+                        <select id="parent_id" type="text" class="form-control{{ $errors->has('parent_id') ? ' is-invalid' : '' }}" name="parent_id" autofocus>
+                            <option value="" selected>root</option>
+                            @foreach($selectCategories as $selectCategory)
+                                <option value="{{ $selectCategory->id }}">{{ $selectCategory->title }}</option>
+                                @foreach($selectCategory->children as $selectCategoryChild)
+                                    <option value="{{ $selectCategoryChild->id }}">{{ $selectCategoryChild->title }}</option>
+                                @endforeach
+                            @endforeach
+                        </select>
                         @if ($errors->has('parent_id'))
                             <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('parent_id') }}</strong>

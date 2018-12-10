@@ -154,6 +154,14 @@ class CountryController extends Controller
         $province->save();
         return redirect()->route('province', $request->country);
     }
+
+    public function provinceDestroy($id)
+    {
+        $province = Province::find($id);
+        $province->delete();
+        return back();
+    }
+    
     public function city($id)
     {
         $province = Province::find($id);
@@ -190,4 +198,12 @@ class CountryController extends Controller
         $city->save();
         return redirect()->route('city', $request->province);
     }
+
+    public function cityDestroy($id)
+    {
+        $city = City::find($id);
+        $city->delete();
+        return back();
+    }
+
 }

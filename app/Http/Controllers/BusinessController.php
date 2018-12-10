@@ -246,19 +246,8 @@ class BusinessController extends Controller
 
     public function showFavorite()
     {
-       // return "hello";
-//        $businesses = User::find(Auth::user()->id)->favorites()->business->get();
-        //$businesses = User::find(Auth::user()->id)->favorites()->business()->get();
-        //$businesses = Favorites::find(1)->business->get();
-        //$favorites = User::find(Auth::user()->id)->favorites()->get();//->pluck('business_id');
-        //$businesses = $businesses->get();
-//        return $favorites->id->get();
-        //$favorites = Favorites::where('user_id', Auth::user()->id)->business->get();
         $favorites = Favorites::where('user_id', Auth::user()->id)->get();
-        //$favorites = Favorites::where('user_id', Auth::user()->id)->business()->get();
-        //return $favorites;
         return view('business.favorite', compact('favorites'));
-//        return view('business.favorite', compact('businesses'));
     }
 
     public function addToFavorite($business_id)

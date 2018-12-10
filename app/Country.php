@@ -11,12 +11,12 @@ class Country extends Model
 {
     use SoftDeletes, CascadeSoftDeletes;
 
-    protected $cascadeDeletes = ['businesses', 'provinces', 'cities'];
+    protected $cascadeDeletes = ['branches', 'provinces', 'cities'];
     protected $dates = ['deleted_at'];
 
-    public function businesses()
+    public function branches()
     {
-        return $this->hasMany('App\Business');
+        return $this->hasMany(BusinessBranch::class, 'country_id', 'id');
     }
 
     public function provinces()

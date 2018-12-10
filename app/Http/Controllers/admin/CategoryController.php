@@ -16,7 +16,8 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('admin.category.category', compact('categories'));
+        $selectCategories = Category::with('children')->whereNull('parent_id')->get();
+        return view('admin.category.category', compact('categories', 'selectCategories'));
     }
 
     /**
@@ -65,8 +66,9 @@ class CategoryController extends Controller
     public function edit($id)
     {
 
-          $category = Category::find($id);
-          return view('admin.category.edit_category', compact('category'));
+        $category = Category::find($id);
+        $selectCategories = Category::with('children')->whereNull('parent_id')->get();
+        return view('admin.category.edit_category', compact('category', 'selectCategories'));
 
     }
 

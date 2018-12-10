@@ -59,7 +59,8 @@ class CommentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $comment = Comment::find($id);
+        return view('admin.comment.edit-comment', compact('comment'));
     }
 
     /**
@@ -71,7 +72,10 @@ class CommentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $comment = Comment::find($id);
+        $comment->comment = $request->comment;
+        $comment->save();
+        return redirect()->route('comment');
     }
 
     /**

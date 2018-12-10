@@ -97,23 +97,17 @@ Route::group(['prefix'=>'admin'],function(){
     Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
     Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
     // admin province URLs
-    Route::get('/province/{id}', 'admin\CountryController@province')->name('province');
-    Route::post('/province/store/{id}', 'admin\CountryController@storeProvince')->name('storeProvince');
-    Route::get('/province/edit/{id}', 'admin\CountryController@editProvince')->name('editProvince');
-    Route::put('/province/update/{id}', 'admin\CountryController@updateProvince')->name('updateProvince');
-//    Route::get('/country/edit/{id}', 'admin\CountryController@edit')->name('editCountry');
-//    Route::post('/country/store','admin\CountryController@store')->name('storeCountry');
-//    Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
-//    Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
-    // admin cities URLs
-        Route::get('/city/{id}', 'admin\CountryController@city')->name('city');
-        Route::post('/city/store/{id}', 'admin\CountryController@storeCity')->name('storeCity');
-        Route::get('/city/edit/{id}', 'admin\CountryController@editCity')->name('editCity');
-        Route::put('/city/update/{id}', 'admin\CountryController@updateCity')->name('updateCity');
-    //    Route::get('/country/edit/{id}', 'admin\CountryController@edit')->name('editCountry');
-    //    Route::post('/country/store','admin\CountryController@store')->name('storeCountry');
-    //    Route::put('/country/update/{id}','admin\CountryController@update')->name('updateCountry');
-    //    Route::delete('/country/delete/{country_id}', 'admin\CountryController@destroy')->name('countryDestroy');
+        Route::get('/province/{id}', 'admin\CountryController@province')->name('province');
+        Route::post('/province/store/{id}', 'admin\CountryController@storeProvince')->name('storeProvince');
+        Route::get('/province/edit/{id}', 'admin\CountryController@editProvince')->name('editProvince');
+        Route::put('/province/update/{id}', 'admin\CountryController@updateProvince')->name('updateProvince');
+        Route::delete('/province/delete/{id}', 'admin\CountryController@provinceDestroy')->name('provinceDestroy');
+        // admin cities URLs
+            Route::get('/city/{id}', 'admin\CountryController@city')->name('city');
+            Route::post('/city/store/{id}', 'admin\CountryController@storeCity')->name('storeCity');
+            Route::get('/city/edit/{id}', 'admin\CountryController@editCity')->name('editCity');
+            Route::put('/city/update/{id}', 'admin\CountryController@updateCity')->name('updateCity');
+            Route::delete('/city/delete/{id}', 'admin\CountryController@cityDestroy')->name('cityDestroy');
 
 
 // admin category URLs
@@ -145,6 +139,8 @@ Route::group(['prefix'=>'admin'],function(){
 
 // admin comment URLs
     Route::get('/comment','admin\CommentController@index')->name('comment');
+    Route::get('/comment/edit/{id}','admin\CommentController@edit')->name('commentEdit');
+    Route::put('/comment/update/{id}','admin\CommentController@update')->name('commentUpdate');
     Route::put('/comment/change-status/{comment_id}','admin\CommentController@commentStatus')->name('commentStatus');
     Route::delete('/comment/delete/{comment_id}','admin\CommentController@destroy')->name('commentDestroy');
 
@@ -168,10 +164,17 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/ticket/subject/{subject_id}','admin\TicketController@ticketSubject')->name('adminTicketSubject');
     Route::post('/ticket/store/{subject_id}','admin\TicketController@store')->name('adminStoreTicket');
     Route::put('/ticket/change-status/{subject_id}','admin\TicketController@changeTicketStatus')->name('changeTicketStatus');
+    Route::get('/ticket/category','admin\TicketController@createTicketCategory')->name('createTicketCategory');
+    Route::post('/ticket/category/store','admin\TicketController@storeTicketCategory')->name('storeTicketCategory');
+    Route::get('/ticket/category/edit/{id}','admin\TicketController@editTicketCategory')->name('editTicketCategory');
+    Route::post('/ticket/category/update/{id}','admin\TicketController@updateTicketCategory')->name('updateTicketCategory');
+    Route::delete('/ticket/category/delete/{id}','admin\TicketController@destroyTicketCategory')->name('destroyTicketCategory');
 
 
 // admin business URLs
     Route::get('/business','admin\BusinessController@index')->name('adminBusiness');
+    Route::get('/business/{id}','admin\BusinessController@edit')->name('adminEditBusiness');
+    Route::put('/business/update/{id}','admin\BusinessController@update')->name('adminUpdateBusiness');
     Route::put('/business/admin-status/{id}','admin\BusinessController@changeAdminStatus')->name('changeAdminStatus');
     Route::delete('/business/delete/{id}','admin\BusinessController@adminBusinessDestroy')->name('adminBusinessDestroy');
 
