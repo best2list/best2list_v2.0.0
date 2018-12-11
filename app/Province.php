@@ -23,6 +23,6 @@ class Province extends Model
 
     public function branches()
     {
-        return $this->hasMany('App\Branch', 'province_id', 'id');
+        return $this->hasMany('App\BusinessBranch', 'province_id', 'id');
     }
 }

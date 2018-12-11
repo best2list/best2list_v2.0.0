@@ -17,6 +17,6 @@ class City extends Model
 
     public function branches()
     {
-        return $this->hasMany('App\Branch', 'city_id', 'id');
+        return $this->hasMany('App\BusinessBranch', 'city_id', 'id');
     }
 }
