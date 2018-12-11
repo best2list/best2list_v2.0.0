@@ -41,124 +41,7 @@
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="single_line" value="{{ old('single_line') }}">
-
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
-
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('admin.form.item-form.single-line')
                     </div>
                 </div>
             </div>
@@ -172,141 +55,7 @@
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="multi_line" value="{{ old('multi_line') }}">
-
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="format" class="col-sm-4 col-form-label text-md-right">{{ __('format') }}</label>
-
-                                <div class="col-md-6">
-                                    <select id="format" class="form-control{{ $errors->has('format') ? ' is-invalid' : '' }}" name="format" autofocus>
-                                        <option value="character" selected>character</option>
-                                        <option value="word">word</option>
-                                    </select>
-                                    @if ($errors->has('format'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('format') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
-
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
-
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('admin.form.item-form.multi-line')
                     </div>
                 </div>
             </div>
@@ -321,141 +70,7 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
 
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="multi_line" value="{{ old('number') }}">
-
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="format" class="col-sm-4 col-form-label text-md-right">{{ __('format') }}</label>
-
-                                <div class="col-md-6">
-                                    <select id="format" class="form-control{{ $errors->has('format') ? ' is-invalid' : '' }}" name="format" autofocus>
-                                        <option value="character" selected>character</option>
-                                        <option value="word">word</option>
-                                    </select>
-                                    @if ($errors->has('format'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('format') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
-
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
-
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('admin.form.item-form.number')
 
                     </div>
                 </div>
@@ -472,141 +87,7 @@
                 <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordionExample">
                     <div class="card-body">
 
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="multi_line" value="{{ old('number') }}">
-
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="format" class="col-sm-4 col-form-label text-md-right">{{ __('format') }}</label>
-
-                                <div class="col-md-6">
-                                    <select id="format" class="form-control{{ $errors->has('format') ? ' is-invalid' : '' }}" name="format" autofocus>
-                                        <option value="character" selected>character</option>
-                                        <option value="word">word</option>
-                                    </select>
-                                    @if ($errors->has('format'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('format') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
-
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
-
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('admin.form.item-form.decimal')
 
                     </div>
                 </div>
@@ -623,141 +104,7 @@
                 <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordionExample">
                     <div class="card-body">
 
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="multi_line" value="{{ old('number') }}">
-
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="format" class="col-sm-4 col-form-label text-md-right">{{ __('format') }}</label>
-
-                                <div class="col-md-6">
-                                    <select id="format" class="form-control{{ $errors->has('format') ? ' is-invalid' : '' }}" name="format" autofocus>
-                                        <option value="character" selected>character</option>
-                                        <option value="word">word</option>
-                                    </select>
-                                    @if ($errors->has('format'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('format') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
-
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
-
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        @include('admin.form.item-form.date')
 
                     </div>
                 </div>
@@ -774,141 +121,194 @@
                 <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordionExample">
                     <div class="card-body">
 
-                        <form method="POST" action="{{ route('store') }}" aria-label="{{ __('store') }}" enctype="multipart/form-data">
-                            @csrf
-                            <input type="hidden" name="multi_line" value="{{ old('number') }}">
+                        @include('admin.form.item-form.time')
 
-                            <div class="form-group row">
-                                <label for="label" class="col-sm-4 col-form-label text-md-right">{{ __('label') }}</label>
+                    </div>
+                </div>
+            </div>
 
-                                <div class="col-md-6">
-                                    <input id="label" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
+            <div class="card">
+                <div class="card-header" id="heading-7">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                            date-time
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('label') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
+                        @include('admin.form.item-form.date-time')
 
-                            <div class="form-group row">
-                                <label for="mandatory" class="col-sm-4 col-form-label text-md-right">{{ __('mandatory') }}</label>
-                                <div class="col-md-6" id="mandatory">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-not-null" value="null" checked autofocus>
-                                        <label class="form-check-label" for="mandatory-not-null">null</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('mandatory') ? ' is-invalid' : '' }}" type="radio" name="mandatory" id="mandatory-null" value="not-null" autofocus>
-                                        <label class="form-check-label" for="mandatory-null">not null</label>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
 
-                            <div class="form-group row">
-                                <label for="duplicate-1" class="col-sm-4 col-form-label text-md-right">{{ __('duplicate') }}</label>
-                                <div class="col-md-6" id="duplicate-1">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="duplicate" value="duplicate" checked autofocus>
-                                        <label class="form-check-label" for="duplicate">duplicate</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('duplicate') ? ' is-invalid' : '' }}" type="radio" name="duplicate" id="unique" value="unique" autofocus>
-                                        <label class="form-check-label" for="unique">unique</label>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="card">
+                <div class="card-header" id="heading-8">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                            select
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-8" class="collapse" aria-labelledby="heading-8" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                            <div class="form-group row">
-                                <label for="visibility" class="col-sm-4 col-form-label text-md-right">{{ __('visibility') }}</label>
-                                <div class="col-md-6" id="visibility">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('enable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="enable" value="enable" checked autofocus>
-                                        <label class="form-check-label" for="enable">enable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('disable') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="disable" value="disable" autofocus>
-                                        <label class="form-check-label" for="disable">disable</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('hidden') ? ' is-invalid' : '' }}" type="radio" name="visibility" id="hidden" value="hidden" autofocus>
-                                        <label class="form-check-label" for="hidden">hidden</label>
-                                    </div>
-                                </div>
-                            </div>
+                        @include('admin.form.item-form.date-time')
 
-                            <div class="form-group row">
-                                <label for="security" class="col-sm-4 col-form-label text-md-right">{{ __('security') }}</label>
-                                <div class="col-md-6" id="security">
-                                    <div class="form-check">
-                                        <input class="form-check-input form-check{{ $errors->has('encrypt') ? ' is-invalid' : '' }}" type="checkbox" name="encrypt" id="encrypt" value="encrypt" autofocus>
-                                        <label class="form-check-label" for="enable">encrypt</label>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
 
-                            <div class="form-group row">
-                                <label for="initial" class="col-sm-4 col-form-label text-md-right">{{ __('initial') }}</label>
+            <div class="card">
+                <div class="card-header" id="heading-9">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                            multi-select
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-9" class="collapse" aria-labelledby="heading-9" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                                <div class="col-md-6">
-                                    <input id="initial" type="text" class="form-control{{ $errors->has('label') ? ' is-invalid' : '' }}" name="label" value="{{ old('label') }}" required autofocus>
-                                    @if ($errors->has('label'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('label') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
+                        @include('admin.form.item-form.date-time')
 
-                            <div class="form-group row">
-                                <label for="format" class="col-sm-4 col-form-label text-md-right">{{ __('format') }}</label>
+                    </div>
+                </div>
+            </div>
 
-                                <div class="col-md-6">
-                                    <select id="format" class="form-control{{ $errors->has('format') ? ' is-invalid' : '' }}" name="format" autofocus>
-                                        <option value="character" selected>character</option>
-                                        <option value="word">word</option>
-                                    </select>
-                                    @if ($errors->has('format'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('format') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
+            <div class="card">
+                <div class="card-header" id="heading-10">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                            radio
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-10" class="collapse" aria-labelledby="heading-10" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                            <div class="form-group row">
-                                <label for="min" class="col-sm-4 col-form-label text-md-right">{{ __('min') }}</label>
+                        @include('admin.form.item-form.date-time')
 
-                                <div class="col-md-2">
-                                    <input id="min" type="text" class="form-control{{ $errors->has('min') ? ' is-invalid' : '' }}" name="min" value="{{ old('min') }}" required autofocus>
-                                    @if ($errors->has('min'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('min') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
+                    </div>
+                </div>
+            </div>
 
-                                <label for="max" class="col-md-2 col-form-label text-md-right">{{ __('max') }}</label>
-                                <div class="col-md-2">
-                                    <input id="max" type="text" class="form-control{{ $errors->has('max') ? ' is-invalid' : '' }}" name="max" value="{{ old('max') }}" required autofocus>
+            <div class="card">
+                <div class="card-header" id="heading-11">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+                            check box
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-11" class="collapse" aria-labelledby="heading-11" data-parent="#accordionExample">
+                    <div class="card-body">
 
-                                    @if ($errors->has('max'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('max') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
+                        @include('admin.form.item-form.date-time')
 
-                            <div class="form-group row mb-0">
-                                <div class="col-md-8 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('insert') }}
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-12">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+                            Email
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-12" class="collapse" aria-labelledby="heading-12" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-13">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+                            phone
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-13" class="collapse" aria-labelledby="heading-13" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-14">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-14" aria-expanded="false" aria-controls="collapse-14">
+                            website
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-14" class="collapse" aria-labelledby="heading-14" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-15">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-15" aria-expanded="false" aria-controls="collapse-15">
+                            Currency
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-15" class="collapse" aria-labelledby="heading-15" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-16">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-16" aria-expanded="false" aria-controls="collapse-16">
+                            file upload
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-16" class="collapse" aria-labelledby="heading-16" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading-17">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse-17" aria-expanded="false" aria-controls="collapse-17">
+                            image upload
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse-17" class="collapse" aria-labelledby="heading-17" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        @include('admin.form.item-form.date-time')
 
                     </div>
                 </div>
