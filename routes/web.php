@@ -78,7 +78,9 @@ Route::group(['prefix'=>'mybusiness'],function(){
 Route::group(['prefix'=>'admin'],function(){
 
 // admin dashboard URLs
-    Route::get('/','AdminController@index')->name('admin');
+    Route::get('/','AdminController@index')->name('admin.home');
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
 
 // admin country URLs
@@ -179,4 +181,18 @@ Route::group(['prefix'=>'admin'],function(){
     Route::delete('/business/delete/{id}','admin\BusinessController@adminBusinessDestroy')->name('adminBusinessDestroy');
 
 
+
 });
+
+
+
+
+
+
+Route::prefix('admin')->group(function() {
+
+});
+
+
+
+

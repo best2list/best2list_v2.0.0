@@ -2,9 +2,8 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header">dashboard</div>
-
-        <div class="card-body">
+        <div class="card">
+            <div class="card-header">Admin Dashboard</div>
 
         </div>
     </div>
